@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+int main(){
+	int t;cin>>t;
+	for(int o=1;o<=t;o++){
+		int n;cin>>n;
+		int i=2;
+		cout<<"Test "<<o<<": ";
+		while(n>1){
+			int ok=0;
+			if(n%i==0){
+				while(n%i==0){
+				n/=i;
+				ok++;
+			    }
+			    cout<<i<<"("<<ok<<") ";
+			}
+			i++;
+		}
+		cout<<endl;
+	} 
+} 
